@@ -135,7 +135,7 @@ export default function Home() {
 
   <p className="text-gray-300 leading-relaxed">
     इस परीक्षा का उद्देश्य students ki conceptual understanding aur problem-solving skills ko test करना होता है 
-    subjects जैसे:
+    subjects जैसे: </p>
     <ul className="list-disc pl-6 mt-2 space-y-1">
       <li>Data Structures and Algorithms</li>
       <li>Computer Networks</li>
@@ -147,20 +147,20 @@ export default function Home() {
       <li>Discrete Mathematics</li>
       <li>General Aptitude (GA)</li>
     </ul>
-  </p>
+ 
 
   <p className="text-gray-300 leading-relaxed">
     <strong>Eligibility:</strong> B.E./B.Tech in Computer Science ya equivalent degree holders (final year included) eligible hote hain.
   </p>
 
   <p className="text-gray-300 leading-relaxed">
-    <strong>Score Validity:</strong> GATE CSE ka score 3 saal tak valid hota hai aur is score se aap:
+    <strong>Score Validity:</strong> GATE CSE ka score 3 saal tak valid hota hai aur is score se aap: </p>
     <ul className="list-disc pl-6 mt-2 space-y-1">
       <li>IITs, NITs, IIITs jaise institutes me M.Tech/M.S. ke liye apply kar sakte hain.</li>
       <li>PSUs (like ISRO, DRDO, BARC, NIC, IOCL, etc.) me job ke liye apply kar sakte hain.</li>
       <li>Foreign universities me admission ke liye bhi use kar sakte hain (e.g., NTU, NUS).</li>
     </ul>
-  </p>
+ 
 
   <p className="text-gray-300 leading-relaxed">
     <strong>Exam Pattern:</strong> GATE CSE me 65 questions hote hain – 100 marks total. Isme 15 marks General Aptitude ke hote hain 
