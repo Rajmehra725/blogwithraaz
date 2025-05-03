@@ -2,11 +2,98 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
+import Rahul from "@/public/Image/Rahul-Kumar-Singh-9.png"
 import { FaBookOpen, FaChalkboardTeacher, FaUniversity, FaYoutube } from 'react-icons/fa';
-
+// Dummy Topper Data
+const toppers = [
+  {
+    name: 'rahul kumar singh',
+    rank: 'AIR 1',
+    image: Rahul,
+  }
+]
+const subjects = [
+  "Algorithms", "DataStructures", "OperatingSystems", "ComputerNetworks",
+  "DBMS", "DiscreteMaths", "ComputerOrganization", "TheoryofComputation",
+  "CompilerDesign", "DigitalLogic", "GeneralAptitude"
+]
 export default function Home() {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % toppers.length)
+    }, 3000)
+    return () => clearInterval(timer)
+  }, [])
+
+  const current = toppers[index]
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 p-4 sm:p-6 text-white font-sans">
+       <section className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-20 px-4 sm:px-8">
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-center space-y-4 max-w-3xl mx-auto"
+      >
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-400 drop-shadow-lg">
+          Meet Our GATE 2025 Toppers! 🏆
+        </h1>
+        <p className="text-gray-300 text-base sm:text-lg">
+          Real success stories. Real ranks. Real students who trusted RaazGateX.
+        </p>
+      </motion.div>
+
+      {/* Carousel Card */}
+      <motion.div
+        key={current.name}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        className="mt-12 max-w-md mx-auto bg-gray-900 rounded-xl p-6 shadow-lg flex flex-col items-center space-y-4"
+      >
+        <Image
+          src={current.image}
+          alt={current.name}
+          width={100}
+          height={100}
+          className="rounded-full border-4 border-blue-500 shadow-md"
+        />
+        <h3 className="text-xl font-bold text-blue-300">{current.name}</h3>
+        <p className="text-white text-sm">{current.rank}</p>
+      </motion.div>
+      <section className="mt-20 text-center px-4 sm:px-8">
+  <motion.h2
+    initial={{ opacity: 0, y: -20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+    className="text-3xl font-bold text-blue-400 drop-shadow mb-8"
+  >
+    📘 GATE Subjects We Cover
+  </motion.h2>
+
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+    {subjects.map((subject, index) => (
+      <Link href={`/subjects/${subject}`} key={subject}>
+        <motion.div
+          className="bg-gray-800 text-white p-5 rounded-xl shadow-lg hover:scale-105 hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: index * 0.1 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-lg font-semibold capitalize">{subject}</h3>
+        </motion.div>
+      </Link>
+    ))}
+  </div>
+</section>
+
+    </section>
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
