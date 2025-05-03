@@ -14,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="pt-20">{children}</main> {/* Padding for fixed navbar */}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
