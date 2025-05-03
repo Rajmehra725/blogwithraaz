@@ -8,7 +8,7 @@ export default function CSPage() {
       <div className="space-y-4">
         <Link href="/cs/dsa">
           <div className="bg-gray-800 p-4 rounded-xl hover:bg-gray-700 transition">
-            📚 Data Structures
+            📚 Data Structuress
           </div>
         </Link>
         <Link href="/cs/algo">
