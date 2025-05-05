@@ -1,22 +1,15 @@
-import Link from 'next/link';
-
-export default function CSPage() {
-  return (
-    <main className="min-h-screen bg-black text-white p-8">
-      <h1 className="text-4xl font-bold text-blue-500 mb-6">💻 Computer Science (GATE)</h1>
-
-      <div className="space-y-4">
-        <Link href="/cs/dsa">
-          <div className="bg-gray-800 p-4 rounded-xl hover:bg-gray-700 transition">
-            📚 Data Structuress
-          </div>
-        </Link>
-        <Link href="/cs/algo">
-          <div className="bg-gray-800 p-4 rounded-xl hover:bg-gray-700 transition">
-            🔍 Algorithms
-          </div>
-        </Link>
+export default function AboutPage() {
+    return (
+      <div className="p-6 text-white">
+        <h1 className="text-2xl font-bold mb-4">About RaazGateX</h1>
+        <p className="mb-2">We are a team of GATE toppers and educators passionate about helping students prepare for GATE CSE effectively.</p>
+  
+        <h2 className="text-xl font-semibold mt-6">🎯 Mission</h2>
+        <p className="mb-4">To provide quality resources and structured preparation tools for every GATE aspirant.</p>
+  
+        <h2 className="text-xl font-semibold">📞 Contact</h2>
+        <p>Email: support@raazgatex.com</p>
       </div>
-    </main>
-  );
-}
+    );
+  }
+  
