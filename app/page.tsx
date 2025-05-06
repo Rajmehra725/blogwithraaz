@@ -232,7 +232,7 @@ export default function Home() {
       <li>Discrete Mathematics, Linear Algebra, Calculus, Probability</li>
       <li>General Aptitude (verbal + quantitative)</li>
     </ul>
-    <Link href="/gate-syllabus">
+    <Link href="/gate-paper/syllabus.pdf" target="_blank">
       <button className="mt-4 bg-blue-600 hover:bg-blue-700 transition px-6 py-2 rounded-full shadow">
         View Detailed Syllabus
       </button>
@@ -308,7 +308,7 @@ export default function Home() {
     <p className="text-gray-300 mt-2">
       Practice past year papers to understand real exam pattern.
     </p>
-    <Link href="/gate-question-papers">
+    <Link href="/pyq">
       <button className="mt-4 bg-yellow-600 hover:bg-yellow-700 transition px-6 py-2 rounded-full shadow">
         View Question Papers
       </button>
@@ -344,7 +344,7 @@ export default function Home() {
     <div className="video-card">
       <iframe
         className="w-full aspect-video rounded-lg"
-        src="https://www.youtube.com/embed/lTlDUGb7dWg" 
+        src="https://www.youtube.com/embed/1OmdZ1fPfOg?si=C7lLvNH9eyizxXH" 
         title="How to Prepare for GATE CSE 2025 | Strategy by Gate Smashers"
         allowFullScreen
       ></iframe>
@@ -352,10 +352,10 @@ export default function Home() {
     </div>
 
     <div className="video-card">
-      <iframe
+    <iframe
         className="w-full aspect-video rounded-lg"
-        src="https://www.youtube.com/embed/Zz--ekWQzXs"
-        title="Mock Test Practice and Mistake Analysis | Knowledge Gate"
+        src="https://www.youtube.com/embed/giQAelJsKRc?si=lsts9g8CM4dBlvHL"
+        title="Why should I write GATE Exam | Opportunities after writing GATE Exam| Knowledge Gate"
         allowFullScreen
       ></iframe>
       <p className="text-center mt-2 text-gray-300">Mock Test Guide & Mistake Analysis – Knowledge Gate</p>
@@ -369,10 +369,10 @@ export default function Home() {
       <Link href="/pdfs/gate-cs-formula-sheet.pdf">
         <button className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full">Formula Sheet (PDF)</button>
       </Link>
-      <Link href="/pdfs/gate-topic-wise-pyq.pdf">
+      <Link href="https://practicepaper.in/gate-cse/topic-wise-practice-of-gate-cse-previous-year-papers" target="_blank">
         <button className="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-full">Topic-wise PYQs (PDF)</button>
       </Link>
-      <Link href="/pdfs/gate-study-plan.pdf">
+      <Link href="/gate-paper/Studyplan.pdf" target='_blank'>
         <button className="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full">3-Month Study Plan</button>
       </Link>
     </div>

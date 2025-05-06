@@ -32,7 +32,7 @@ const subjects: Record<SubjectKey, Video[]> = {
     },
     {
       channel: "Knowledge Gate",
-      video: "https://www.youtube.com/embed/qv3X7CqvF2k",
+      video: "https://www.youtube.com/embed/009FHqBo87Q?si=G23DZQxqxtZqUM_m",
     },
   ],
   "Data Structures": [
@@ -52,25 +52,25 @@ const subjects: Record<SubjectKey, Video[]> = {
   "Algorithms": [
     {
       channel: "Abdul Bari",
-      video: "https://www.youtube.com/embed/ZG4druOaJcY",
+      video: "https://www.youtube.com/embed/0IAPZzGSbME?si=tVTapG9O-XvjWV7t",
     },
     {
       channel: "Neso Academy",
-      video: "https://www.youtube.com/embed/nV8wTz_nOGk",
+      video: "https://www.youtube.com/embed/UglQN5S9-lc?si=68v_Rm1B8Cg5Cqoh",
     },
     {
       channel: "Gate Smashers",
-      video: "https://www.youtube.com/embed/uz3ZLpCmKCM",
+      video: "https://www.youtube.com/embed/u8JZ9gU5o4g?si=MK5D73eV7ixH-lmH",
     },
   ],
   "Computer Networks": [
     {
       channel: "Neso Academy",
-      video: "https://www.youtube.com/embed/3Eexp8wRWj4",
+      video: "https://www.youtube.com/embed/VwN91x5i25g?si=qLFRGYRenuW0-pFd",
     },
     {
       channel: "Gate Smashers",
-      video: "https://www.youtube.com/embed/qB2vmuY4_K8",
+      video: "https://www.youtube.com/embed/JFF2vJaN0Cw?si=Dekcm_ZnlIZgPdDb",
     },
     {
       channel: "Knowledge Gate",
@@ -80,11 +80,11 @@ const subjects: Record<SubjectKey, Video[]> = {
   DBMS: [
     {
       channel: "Gate Smashers",
-      video: "https://www.youtube.com/embed/lE6Hxz4yomA",
+      video: "https://www.youtube.com/embed/kBdlM6hNDAE?si=UrZifciZopUUpAiz",
     },
     {
       channel: "Neso Academy",
-      video: "https://www.youtube.com/embed/dl00fOOYLOM",
+      video: "https://www.youtube.com/embed/OMwgGL3lHlI?si=DHIXFDzuL9g-9TjD",
     },
     {
       channel: "Knowledge Gate",
@@ -94,7 +94,7 @@ const subjects: Record<SubjectKey, Video[]> = {
   "Compiler Design": [
     {
       channel: "Gate Smashers",
-      video: "https://www.youtube.com/embed/wrx8RzP1tgc",
+      video: "https://www.youtube.com/embed/XUsw5igq4DM?si=aCgyEK7fMpi2fN7g",
     },
     {
       channel: "Neso Academy",
@@ -108,7 +108,7 @@ const subjects: Record<SubjectKey, Video[]> = {
   "Digital Logic": [
     {
       channel: "Gate Smashers",
-      video: "https://www.youtube.com/embed/tq3yCd_Y8N8",
+      video: "https://www.youtube.com/embed/O0gtKDu_cJc?si=fElKTjplfamXwxa1",
     },
     {
       channel: "Neso Academy",
@@ -122,11 +122,11 @@ const subjects: Record<SubjectKey, Video[]> = {
   "Computer Organization": [
     {
       channel: "Neso Academy",
-      video: "https://www.youtube.com/embed/L7LRXmB2F64",
+      video: "https://www.youtube.com/embed/Ol8D69VKX2k?si=A06ktejvCFh_n4Ic",
     },
     {
       channel: "Gate Smashers",
-      video: "https://www.youtube.com/embed/ZXrHj2mKhgA",
+      video: "https://www.youtube.com/embed/L9X7XXfHYdU?si=9X3SumnV4RLO5nfq",
     },
     {
       channel: "Knowledge Gate",
@@ -136,11 +136,11 @@ const subjects: Record<SubjectKey, Video[]> = {
   "Theory of Computation": [
     {
       channel: "Gate Smashers",
-      video: "https://www.youtube.com/embed/5xw4GYO3zC0",
+      video: "https://www.youtube.com/embed/XslI8h7cGDs?si=MH0X9t45JlrzZtnQ",
     },
     {
       channel: "Neso Academy",
-      video: "https://www.youtube.com/embed/5AGbj_ZTqDM",
+      video: "https://www.youtube.com/embed/58N2N7zJGrQ?si=Xi_kljat3wh-3wTv",
     },
     {
       channel: "Knowledge Gate",
@@ -150,11 +150,11 @@ const subjects: Record<SubjectKey, Video[]> = {
   "Discrete Mathematics": [
     {
       channel: "Gate Smashers",
-      video: "https://www.youtube.com/embed/0IAPZzGSbME",
+      video: "https://www.youtube.com/embed/YBb2oYIzXK0?si=3GVr5pqZ36n_HQbA",
     },
     {
       channel: "Neso Academy",
-      video: "https://www.youtube.com/embed/kzqCm3Vtd0Q",
+      video: "https://www.youtube.com/embed/p2b2Vb-cYCs?si=yWwLZW2s-xKwbiO9",
     },
     {
       channel: "Knowledge Gate",
