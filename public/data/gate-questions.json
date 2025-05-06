@@ -1,0 +1,1502 @@
+[
+    {
+      "question": "Q1: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q2: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q3: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q4: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q5: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q6: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q7: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q8: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q9: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q10: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q11: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q12: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q13: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q14: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q15: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q16: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q17: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q18: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q19: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q20: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q21: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q22: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q23: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q24: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q25: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q26: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q27: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q28: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q29: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q30: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q31: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q32: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q33: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q34: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q35: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q36: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q37: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q38: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q39: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q40: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q41: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q42: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q43: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q44: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q45: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q46: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q47: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q48: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q49: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q50: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q51: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q52: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q53: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q54: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q55: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q56: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q57: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q58: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q59: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q60: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q61: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q62: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q63: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q64: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q65: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q66: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q67: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q68: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q69: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q70: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q71: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q72: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q73: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q74: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q75: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q76: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q77: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q78: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q79: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q80: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q81: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q82: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q83: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q84: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q85: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q86: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q87: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q88: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q89: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q90: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q91: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q92: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q93: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q94: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q95: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q96: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q97: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q98: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q99: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q100: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q101: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q102: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q103: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q104: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q105: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q106: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q107: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q108: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q109: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q110: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q111: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q112: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q113: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q114: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q115: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q116: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q117: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q118: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q119: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q120: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q121: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q122: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q123: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q124: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q125: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q126: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q127: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q128: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q129: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q130: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q131: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q132: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q133: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q134: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q135: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q136: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q137: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q138: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q139: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q140: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q141: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q142: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q143: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q144: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q145: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Q146: Which data structure uses FIFO principle?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q147: What is the time complexity of binary search in a sorted array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q148: Which sorting algorithm has the best average case time complexity?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Q149: In C, what is the size of an int on a 32-bit system?",
+      "options": [
+        "2 bytes",
+        "4 bytes",
+        "8 bytes",
+        "Depends on compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Q150: Which of these is not an OOP principle?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correct": 3
+    }
+  ]

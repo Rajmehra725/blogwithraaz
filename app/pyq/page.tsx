@@ -1,13 +1,233 @@
 "use client";
+import DailyGateQuiz from "@/app/cs/components/DailyGateQuiz";
 
 import { useState } from "react";
 
 const questions = [
-  { year: "2024", subject: "Algorithms", difficulty: "Easy", question: "What is the time complexity of Merge Sort?" },
-  { year: "2024", subject: "OS", difficulty: "Medium", question: "What is the difference between preemptive and non-preemptive scheduling?" },
-  { year: "2023", subject: "DBMS", difficulty: "Hard", question: "Explain normalization with types and examples." },
-  { year: "2023", subject: "Algorithms", difficulty: "Hard", question: "Prove that comparison-based sorting takes Ω(n log n) time." },
-  { year: "2022", subject: "OS", difficulty: "Easy", question: "Define Deadlock and its necessary conditions." },
+  {
+    year: "2024_1",
+    subject: "Gate",
+    difficulty: "Easy",
+    question: "What is the time complexity of Merge Sort?",
+    pdf: "/gate-paper/2024_1.pdf",
+  },
+  {
+    year: "2024_2",
+    subject: "Gate",
+    difficulty: "Medium",
+    question: "What is the difference between preemptive and non-preemptive scheduling?",
+    pdf: "/gate-paper/2024_2.pdf",
+  },
+  {
+    year: "2024_AnsKeys1",
+    subject: "Gate Answer Keys",
+    difficulty: "Easy",
+    question: "What is the time complexity of Merge Sort?",
+    pdf: "/gate-paper/2024_Ans1.pdf",
+  },
+  {
+    year: "2024_AnsKeys2",
+    subject: "Gate Answer Keys",
+    difficulty: "Medium",
+    question: "What is the difference between preemptive and non-preemptive scheduling?",
+    pdf: "/gate-paper/2024_Ans2.pdf",
+  },
+  {
+    year: "2023",
+    subject: "CSE",
+    difficulty: "Hard",
+    question: "Explain normalization with types and examples.",
+    pdf: "/gate-paper/2023.pdf",
+  },
+  {
+    year: "2023",
+    subject: "Answer Keys",
+    difficulty: "Hard",
+    question: "Prove that comparison-based sorting takes Ω(n log n) time.",
+    pdf: "/gate-paper/2023_Ans.pdf",
+  },
+  {
+    year: "2022",
+    subject: "Gate",
+    difficulty: "Easy",
+    question: "Define Deadlock and its necessary conditions.",
+    pdf: "/gate-paper/2022.pdf",
+  },
+  {
+    year: "2022 Answer Keys",
+    subject: "Gate Answer Keys",
+    difficulty: "Easy",
+    question: "Define Deadlock and its necessary conditions.",
+    pdf: "/gate-paper/2022.pdf",
+  },
+  {
+    year: "2021_1",
+    subject: "Gate",
+    difficulty: "Medium",
+    question: "What is the difference between TCP and UDP?",
+    pdf: "/gate-paper/2021_1.pdf",
+  },
+  {
+    year: "2021_2",
+    subject: "Gate",
+    difficulty: "Medium",
+    question: "What is the difference between TCP and UDP?",
+    pdf: "/gate-paper/2021_2.pdf",
+  },
+  {
+    year: "2021 Answer Keys",
+    subject: "Gate Answer Keys Set1",                        
+    difficulty: "Medium",
+    question: "What is the difference between TCP and UDP?",
+    pdf: "/gate-paper/2021_Ans1.pdf",
+  },
+  {
+    year: "2021_1",
+    subject: "Gate Set2 Answer Keys",
+    difficulty: "Medium",
+    question: "What is the difference between TCP and UDP?",
+    pdf: "/gate-paper/2021Ans2.pdf",
+  },
+  {
+    year: "2020",
+    subject: "Gate ",
+    difficulty: "Hard",
+    question: "How does a Trie data structure work?",
+    pdf: "/gate-paper/2020.pdf",
+  },
+  {
+    year: "2020 Answer Keys",
+    subject: "Gate Answer Keys ",
+    difficulty: "Hard",
+    question: "How does a Trie data structure work?",
+    pdf: "/gate-paper/2020_Ans.pdf",
+  },
+  {
+    year: "2019",
+    subject: "Gate Answer Keys",
+    difficulty: "Medium",
+    question: "Explain the concept of DFA and NFA with examples.",
+    pdf: "/gate-paper/2019.pdf",
+  },
+  {
+    year: "2019 Answer Keys",
+    subject: "Gate Answer Keys",
+    difficulty: "Medium",
+    question: "Explain the concept of DFA and NFA with examples.",
+    pdf: "/gate-paper/2019_Ans.pdf",
+  },
+  {
+    year: "2018",
+    subject: "Gate",
+    difficulty: "Hard",
+    question: "What is lexical analysis and how is it implemented?",
+    pdf: "/gate-paper/2018.pdf",
+  },
+  {
+    year: "2018 Answer Keys",
+    subject: "Gate Answer Keys",
+    difficulty: "Hard",
+    question: "What is lexical analysis and how is it implemented?",
+    pdf: "/gate-paper/2018_Ans.pdf",
+  },
+  {
+    year: "2017",
+    subject: "Operating Systems",
+    difficulty: "Easy",
+    question: "What are the different types of scheduling algorithms?",
+    pdf: "/gate-paper/2017.pdf",
+  },
+  {
+    year: "2016",
+    subject: "Gate Set1",
+    difficulty: "Medium",
+    question: "Explain pipelining and its advantages.",
+    pdf: "/gate-paper/2016_2.pdf",
+  },
+  {
+    year: "2016",
+    subject: "Gate Set2",
+    difficulty: "Medium",
+    question: "Explain pipelining and its advantages.",
+    pdf: "/gate-paper/2016_1.pdf",
+  },
+  {
+    year: "2016 Answer Keys",
+    subject: "Gate Answer Keys",
+    difficulty: "Medium",
+    question: "Explain pipelining and its advantages.",
+    pdf: "/gate-paper/2016_Ans1.pdf",
+  },
+  {
+    year: "2016 Answer Keys",
+    subject: "Gate Answer Keys",
+    difficulty: "Medium",
+    question: "Explain pipelining and its advantages.",
+    pdf: "/gate-paper/2016_Ans2.pdf",
+  },
+  {
+    year: "2015",
+    subject: "Gate Set1",
+    difficulty: "Hard",
+    question: "Discuss ACID properties of a transaction.",
+    pdf: "/gate-paper/2015_1.pdf",
+  },
+  {
+    year: "2015",
+    subject: "Gate Set2",
+    difficulty: "Hard",
+    question: "Discuss ACID properties of a transaction.",
+    pdf: "/gate-paper/2015_2.pdf",
+  },
+  {
+    year: "2015",
+    subject: "Gate Set1 Answer Keys",
+    difficulty: "Hard",
+    question: "Discuss ACID properties of a transaction.",
+    pdf: "/gate-paper/2015_Ans1.pdf",
+  },
+  {
+    year: "2014",
+    subject: "Gate Set1",
+    difficulty: "Easy",
+    question: "What is a flip-flop and its types?",
+    pdf: "/gate-paper/2014_1.pdf",
+  },
+  {
+    year: "2014",
+    subject: "Gate Set2",
+    difficulty: "Easy",
+    question: "What is a flip-flop and its types?",
+    pdf: "/gate-paper/2014_2.pdf",
+  },
+  {
+    year: "2014",
+    subject: "Gate Set3",
+    difficulty: "Easy",
+    question: "What is a flip-flop and its types?",
+    pdf: "/gate-paper/2014_3.pdf",
+  },
+  {
+    year: "2014",
+    subject: "Gate Answer keys 1",
+    difficulty: "Easy",
+    question: "What is a flip-flop and its types?",
+    pdf: "/gate-paper/2014_Ans1.pdf",
+  },
+  {
+    year: "2014",
+    subject: "Gate Answer Keys2",
+    difficulty: "Easy",
+    question: "What is a flip-flop and its types?",
+    pdf: "/gate-paper/2014_Ans2.pdf",
+  },
+  {
+    year: "2014",
+    subject: "Gate Answer Keys3",
+    difficulty: "Easy",
+    question: "What is a flip-flop and its types?",
+    pdf: "/gate-paper/2014_Ans3.pdf",
+  },
 ];
 
 const years = [...new Set(questions.map((q) => q.year))];
@@ -30,8 +250,9 @@ export default function PyqPage() {
     <div className="p-6 text-white bg-gradient-to-tr from-gray-900 to-gray-800 min-h-screen">
       <h1 className="text-3xl font-bold mb-6">📚 GATE CSE Previous Year Questions</h1>
 
+      {/* Filters */}
       <div className="grid md:grid-cols-3 gap-4 mb-6">
-        {/* Year Buttons */}
+        {/* Year */}
         <div>
           <h2 className="text-lg font-semibold mb-2">Select Year</h2>
           <div className="flex flex-wrap gap-2">
@@ -49,7 +270,7 @@ export default function PyqPage() {
           </div>
         </div>
 
-        {/* Subject Buttons */}
+        {/* Subject */}
         <div>
           <h2 className="text-lg font-semibold mb-2">Select Subject</h2>
           <div className="flex flex-wrap gap-2">
@@ -67,7 +288,7 @@ export default function PyqPage() {
           </div>
         </div>
 
-        {/* Difficulty Filter */}
+        {/* Difficulty */}
         <div>
           <h2 className="text-lg font-semibold mb-2">Difficulty</h2>
           <div className="flex flex-wrap gap-2">
@@ -86,7 +307,7 @@ export default function PyqPage() {
         </div>
       </div>
 
-      {/* Questions Preview */}
+      {/* Questions */}
       <div className="mt-6">
         <h2 className="text-xl font-bold mb-4">📝 Filtered Questions</h2>
         {filteredQuestions.length === 0 ? (
@@ -99,7 +320,13 @@ export default function PyqPage() {
                   <span className="text-sm text-gray-300">
                     {q.year} • {q.subject} • <strong>{q.difficulty}</strong>
                   </span>
-                  <button className="text-blue-300 hover:text-blue-400 text-sm underline">📥 Download</button>
+                  <a
+                    href={q.pdf}
+                    download={`question-${q.year}-${q.subject}.pdf`}
+                    className="text-blue-300 hover:text-blue-400 text-sm underline"
+                  >
+                    📥 Download
+                  </a>
                 </div>
                 <p>{q.question}</p>
               </li>
@@ -108,13 +335,9 @@ export default function PyqPage() {
         )}
       </div>
 
-      {/* Daily Challenge Section */}
+      {/* Daily Challenge */}
       <div className="mt-10 p-6 rounded-xl bg-gradient-to-r from-indigo-900 to-blue-700 shadow-xl">
-        <h2 className="text-xl font-bold text-white mb-2">🔥 Daily PYQ Challenge</h2>
-        <p className="text-gray-200 mb-4">Solve 5 new PYQs every day to stay consistent!</p>
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold">
-          Start Challenge 🚀
-        </button>
+      <DailyGateQuiz />
       </div>
     </div>
   );
