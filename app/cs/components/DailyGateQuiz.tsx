@@ -147,7 +147,7 @@ export default function DailyGateQuiz() {
             onClick={restart}
             className="mt-6 bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold hover:bg-yellow-500"
           >
-            Restart Challenges 🔁
+            Restart Challenge 🔁
           </button>
         </>
       ) : null}
