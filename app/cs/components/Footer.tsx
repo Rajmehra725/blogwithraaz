@@ -24,6 +24,7 @@ export default function Footer() {
             <li><Link href="/gate-syllabus">GATE Syllabus</Link></li>
             <li><Link href="/mock-tests">Mock Tests</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
+            <li><Link href="/profile">Developer Profile</Link></li>
           </ul>
         </div>
 

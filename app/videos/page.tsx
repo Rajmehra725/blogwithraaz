@@ -74,7 +74,7 @@ const subjects: Record<SubjectKey, Video[]> = {
     },
     {
       channel: "Knowledge Gate",
-      video: "https://www.youtube.com/embed/H-e0tKjZFFw",
+      video: "https://www.youtube.com/embed/APVCgkqWcQ4?si=uesgjyJP_4eicu0D",
     },
   ],
   DBMS: [
@@ -88,7 +88,7 @@ const subjects: Record<SubjectKey, Video[]> = {
     },
     {
       channel: "Knowledge Gate",
-      video: "https://www.youtube.com/embed/F5V4NhG9mUo",
+      video: "https://www.youtube.com/embed/FchQ6wZVqsA?si=nz5cFr9mo1zFGJ1w",
     },
   ],
   "Compiler Design": [
@@ -98,11 +98,11 @@ const subjects: Record<SubjectKey, Video[]> = {
     },
     {
       channel: "Neso Academy",
-      video: "https://www.youtube.com/embed/8pjyFzH3iEw",
+      video: "https://www.youtube.com/embed/5ZmFlxrNaN8?si=DWMrvg3gZF5X0Id3",
     },
     {
-      channel: "Knowledge Gate",
-      video: "https://www.youtube.com/embed/YiB5VQd4fUU",
+      channel: "The GateHub",
+      video: "https://www.youtube.com/embed/Cb46_P12bMY?si=t-FbgJ-lSr9gT0P3",
     },
   ],
   "Digital Logic": [
@@ -112,11 +112,11 @@ const subjects: Record<SubjectKey, Video[]> = {
     },
     {
       channel: "Neso Academy",
-      video: "https://www.youtube.com/embed/2ab_9nN4Rj8",
+      video: "https://www.youtube.com/embed/M0mx8S05v60?si=gWm73gNVwOBCafVG",
     },
     {
       channel: "Knowledge Gate",
-      video: "https://www.youtube.com/embed/iYw4cRYuZKM",
+      video: "https://www.youtube.com/embed/lH0sYax5Yg0?si=uw2YCwtsA-4PXpm2",
     },
   ],
   "Computer Organization": [
@@ -130,7 +130,7 @@ const subjects: Record<SubjectKey, Video[]> = {
     },
     {
       channel: "Knowledge Gate",
-      video: "https://www.youtube.com/embed/f4smFiZB_Gk",
+      video: "https://www.youtube.com/embed/nezosHntjPg?si=rmEPJnuuN3xjoadL",
     },
   ],
   "Theory of Computation": [
@@ -144,7 +144,7 @@ const subjects: Record<SubjectKey, Video[]> = {
     },
     {
       channel: "Knowledge Gate",
-      video: "https://www.youtube.com/embed/LrxXbCo0nYg",
+      video: "https://www.youtube.com/embed/gK_V_lzNQg8?si=4ea8ZdkxI48npHho",
     },
   ],
   "Discrete Mathematics": [
@@ -158,7 +158,7 @@ const subjects: Record<SubjectKey, Video[]> = {
     },
     {
       channel: "Knowledge Gate",
-      video: "https://www.youtube.com/embed/fv2Q-tWZrgg",
+      video: "https://www.youtube.com/embed/h4sd7wRcyR0?si=A7_cZUZgFex_xPh6",
     },
   ],
 };
