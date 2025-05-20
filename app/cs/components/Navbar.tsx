@@ -30,6 +30,7 @@ export default function Navbar() {
     { href: '/quizzes', label: 'Quizzes' },
     { href: '/videos', label: 'Videos' },
     { href: '/about', label: 'About' },
+     { href: '/resume', label: 'Resume Builder' },
   ];
 
   return (
