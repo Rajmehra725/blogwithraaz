@@ -1,12 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const ResumeBuilder = () => {
   const resumeRef = useRef<HTMLDivElement>(null);
-  const [html2pdfModule, setHtml2pdfModule] = useState<any>(null);
   const [selectedTemplate, setSelectedTemplate] = useState<'simple' | 'modern'>('simple');
   const [photo, setPhoto] = useState<string | null>(null);
 
@@ -14,7 +12,8 @@ const ResumeBuilder = () => {
     name: '',
     email: '',
     phone: '',
-    summary: '',
+    linkedlink: '',
+    Github: '',
     education: '',
     experience: '',
     skills: '',
@@ -25,9 +24,8 @@ const ResumeBuilder = () => {
   });
 
   useEffect(() => {
-    import('html2pdf.js').then((module) => {
-      setHtml2pdfModule(module.default);
-    });
+    // Preload module (optional)
+    import('html2pdf.js');
   }, []);
 
   const handleChange = (
@@ -35,7 +33,6 @@ const ResumeBuilder = () => {
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
 
   const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -45,14 +42,11 @@ const ResumeBuilder = () => {
       reader.readAsDataURL(file);
     }
   };
-   
 
   const handleDownloadPDF = async () => {
     if (!resumeRef.current) return;
 
     const html2pdf = (await import('html2pdf.js')).default;
-
-    const element = resumeRef.current;
 
     html2pdf()
       .set({
@@ -62,20 +56,21 @@ const ResumeBuilder = () => {
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
       })
-      .from(element)
+      .from(resumeRef.current)
       .save();
   };
-const handleSubmit = (e: React.FormEvent) => {
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     handleDownloadPDF();
   };
 
-
   const fields = [
     { label: 'Full Name', name: 'name', type: 'text' },
     { label: 'Email', name: 'email', type: 'email' },
+    { label: 'Linkedlink ', name: 'linkedlink', type: 'text' },
+    { label: 'Github Link', name: 'Github', type: 'text' },
     { label: 'Phone', name: 'phone', type: 'text' },
-    { label: 'Summary', name: 'summary', textarea: true },
     { label: 'Education', name: 'education', textarea: true },
     { label: 'Experience', name: 'experience', textarea: true },
     { label: 'Skills', name: 'skills', textarea: true },
@@ -163,37 +158,68 @@ const handleSubmit = (e: React.FormEvent) => {
         </form>
 
         {/* Live Preview */}
-        <div ref={resumeRef} className="bg-white p-6 rounded-lg shadow-md">
+        <div ref={resumeRef} className="bg-white p-6 rounded-lg shadow-md text-sm">
           {selectedTemplate === 'simple' ? (
             <div>
               {photo && <img src={photo} alt="Profile" className="w-24 h-24 object-cover rounded-full mb-2" />}
               <h2 className="text-xl font-bold">{formData.name}</h2>
-              <p className="text-sm">{formData.email} | {formData.phone}</p>
+              <p className="text-sm">{formData.email} | {formData.phone}| {formData.linkedlink}| {formData.Github}</p>
               <hr className="my-2" />
-              <p className="text-sm mb-2"><strong>Summary:</strong> {formData.summary}</p>
-              <p className="text-sm mb-2"><strong>Education:</strong> {formData.education}</p>
-              <p className="text-sm mb-2"><strong>Experience:</strong> {formData.experience}</p>
-              <p className="text-sm mb-2"><strong>Skills:</strong> {formData.skills}</p>
-              <p className="text-sm mb-2"><strong>Projects:</strong> {formData.projects}</p>
-              <p className="text-sm mb-2"><strong>Certifications:</strong> {formData.certifications}</p>
-              <p className="text-sm mb-2"><strong>Languages:</strong> {formData.languages}</p>
-              <p className="text-sm mb-2"><strong>Hobbies:</strong> {formData.hobbies}</p>
+              <p className="mb-1"><strong>Education:</strong> {formData.education}</p>
+               <hr className="my-2" />
+              <p className="mb-1"><strong>Experience:</strong> {formData.experience}</p>
+               <hr className="my-2" />
+              <p className="mb-1"><strong>Skills:</strong> {formData.skills}</p>
+               <hr className="my-2" />
+              <p className="mb-1"><strong>Projects:</strong> {formData.projects}</p>
+               <hr className="my-2" />
+              <p className="mb-1"><strong>Certifications:</strong> {formData.certifications}</p>
+               <hr className="my-2" />
+              <p className="mb-1"><strong>Languages:</strong> {formData.languages}</p>
+               <hr className="my-2" />
+              <p className="mb-1"><strong>Hobbies:</strong> {formData.hobbies}</p>
+               <hr className="my-2" />
             </div>
           ) : (
-            <div className="text-sm">
+            <div>
               <div className="flex items-center gap-4">
                 {photo && <img src={photo} alt="Profile" className="w-20 h-20 rounded-full" />}
                 <div>
                   <h2 className="text-xl font-bold text-orange-600">{formData.name}</h2>
-                  <p>{formData.email} | {formData.phone}</p>
+                  <p>{formData.email} | {formData.phone} | {formData.linkedlink} | {formData.Github}</p>
                 </div>
               </div>
-              <hr className="my-2 border-orange-300" />
-              {['summary', 'education', 'experience', 'skills', 'projects', 'certifications', 'languages', 'hobbies'].map((key) => (
-                <div key={key} className="mb-1">
-                  <strong className="capitalize text-orange-500">{key}:</strong> {formData[key as keyof typeof formData]}
+              <div className="mt-4 grid grid-cols-2 gap-2">
+               
+                <div>
+                  <h3 className="font-semibold text-gray-700">Education</h3>
+                  <p>{formData.education}</p>
                 </div>
-              ))}
+                <div>
+                  <h3 className="font-semibold text-gray-700">Experience</h3>
+                  <p>{formData.experience}</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-700">Skills</h3>
+                  <p>{formData.skills}</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-700">Projects</h3>
+                  <p>{formData.projects}</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-700">Certifications</h3>
+                  <p>{formData.certifications}</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-700">Languages</h3>
+                  <p>{formData.languages}</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-700">Hobbies</h3>
+                  <p>{formData.hobbies}</p>
+                </div>
+              </div>
             </div>
           )}
         </div>

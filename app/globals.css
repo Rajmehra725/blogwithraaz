@@ -11,6 +11,9 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+.input {
+  @apply w-full p-2 border border-gray-300 rounded;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
