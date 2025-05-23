@@ -19,7 +19,7 @@ export default function LoginPage() {
     setLoading(true);
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      router.push("/dashboard");
+      router.push("/chat");
     } catch (err: any) {
       setError(err.message);
     } finally {
