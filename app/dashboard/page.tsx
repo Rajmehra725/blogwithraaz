@@ -6,7 +6,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { doc, getDoc } from "firebase/firestore";
-import { Chart } from "react-chartjs-2";
+import dynamic from "next/dynamic";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -17,7 +17,13 @@ import {
   Legend,
 } from "chart.js";
 
+// Register ChartJS components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+
+// Dynamically import Chart with SSR disabled
+const Chart = dynamic(() => import("react-chartjs-2").then(mod => mod.Chart), {
+  ssr: false,
+});
 
 export default function Dashboard() {
   const [currentUser] = useAuthState(auth);
@@ -42,12 +48,13 @@ export default function Dashboard() {
 
   useEffect(() => {
     setTimeGreeting(getGreeting());
+
     const fetchQuote = async () => {
       const quotes = [
         "Push yourself, because no one else is going to do it for you.",
         "Success is not for the lazy.",
         "The future depends on what you do today.",
-        "Believe you can and you're halfway there."
+        "Believe you can and you're halfway there.",
       ];
       setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
     };
@@ -65,6 +72,8 @@ export default function Dashboard() {
 
   if (!currentUser) return <p className="p-6">Loading...</p>;
 
+  const displayName = userInfo?.name || currentUser?.email || "User";
+
   const chartData = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
     datasets: [
@@ -81,7 +90,7 @@ export default function Dashboard() {
       case "dashboard":
         return (
           <>
-            <h1 className="text-2xl font-bold text-gray-700 mb-1">{timeGreeting}, {userInfo?.name || currentUser.email}</h1>
+            <h1 className="text-2xl font-bold text-gray-700 mb-1">{timeGreeting}, {displayName}</h1>
             <p className="text-sm text-gray-500 mb-4">You're now logged in to RaazGatex ✨</p>
             <div className="mb-4">
               <h2 className="text-lg font-semibold mb-2">📊 Dashboard Analytics</h2>
@@ -95,7 +104,7 @@ export default function Dashboard() {
             <h2 className="text-lg font-semibold mb-2">📋 Profile Info</h2>
             <p><strong>Email:</strong> {currentUser.email}</p>
             <p><strong>Role:</strong> {userInfo?.role || "User"}</p>
-            <p><strong>Joined:</strong> {userInfo?.createdAt || "N/A"}</p>
+            <p><strong>Joined:</strong> {userInfo?.createdAt?.toDate?.().toLocaleDateString?.() || "N/A"}</p>
           </div>
         );
       case "settings":
