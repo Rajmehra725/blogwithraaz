@@ -20,20 +20,13 @@ import {
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 export default function Dashboard() {
-  const [currentUser, loading] = useAuthState(auth);
+  const [currentUser] = useAuthState(auth);
   const [quote, setQuote] = useState("");
   const [userInfo, setUserInfo] = useState<any>(null);
   const [timeGreeting, setTimeGreeting] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [activeTab, setActiveTab] = useState("dashboard");
   const router = useRouter();
-
-  // 🔒 Redirect if not logged in
-  useEffect(() => {
-    if (!loading && !currentUser) {
-      router.push("/login");
-    }
-  }, [loading, currentUser, router]);
 
   const handleSignOut = async () => {
     await signOut(auth);
@@ -42,39 +35,35 @@ export default function Dashboard() {
 
   const getGreeting = () => {
     const hour = new Date().getHours();
-    if (hour < 12) return "Good Morning raaz";
+    if (hour < 12) return "Good Morning";
     else if (hour < 18) return "Good Afternoon";
     else return "Good Evening";
   };
 
   useEffect(() => {
-    if (currentUser) {
-      setTimeGreeting(getGreeting());
+    setTimeGreeting(getGreeting());
+    const fetchQuote = async () => {
+      const quotes = [
+        "Push yourself, because no one else is going to do it for you.",
+        "Success is not for the lazy.",
+        "The future depends on what you do today.",
+        "Believe you can and you're halfway there."
+      ];
+      setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
+    };
 
-      const fetchQuote = async () => {
-        const quotes = [
-          "Push yourself, because no one else is going to do it for you.",
-          "Success is not for the lazy.",
-          "The future depends on what you do today.",
-          "Believe you can and you're halfway there."
-        ];
-        setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
-      };
+    const fetchUserInfo = async () => {
+      if (!currentUser) return;
+      const ref = doc(db, "users", currentUser.uid);
+      const snap = await getDoc(ref);
+      if (snap.exists()) setUserInfo(snap.data());
+    };
 
-      const fetchUserInfo = async () => {
-        const ref = doc(db, "users", currentUser.uid);
-        const snap = await getDoc(ref);
-        if (snap.exists()) setUserInfo(snap.data());
-      };
-
-      fetchQuote();
-      fetchUserInfo();
-    }
+    fetchQuote();
+    fetchUserInfo();
   }, [currentUser]);
 
-  if (loading || !currentUser) {
-    return <div className="p-6 text-gray-500">Loading...</div>;
-  }
+  if (!currentUser) return <p className="p-6">Loading...</p>;
 
   const chartData = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
@@ -92,12 +81,8 @@ export default function Dashboard() {
       case "dashboard":
         return (
           <>
-            <h1 className="text-2xl font-bold text-gray-700 mb-1">
-              {timeGreeting}, {userInfo?.name || currentUser.email}
-            </h1>
-            <p className="text-sm text-gray-500 mb-4">
-              You're now logged in to RaazGatex ✨
-            </p>
+            <h1 className="text-2xl font-bold text-gray-700 mb-1">{timeGreeting}, {userInfo?.name || currentUser.email}</h1>
+            <p className="text-sm text-gray-500 mb-4">You're now logged in to RaazGatex ✨</p>
             <div className="mb-4">
               <h2 className="text-lg font-semibold mb-2">📊 Dashboard Analytics</h2>
               <Chart type="bar" data={chartData} />
