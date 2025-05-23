@@ -25,6 +25,8 @@ export default function Footer() {
             <li><Link href="/mock-tests">Mock Tests</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
             <li><Link href="/profile">Developer Profile</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="News">Daily News</Link></li>
           </ul>
         </div>
 
