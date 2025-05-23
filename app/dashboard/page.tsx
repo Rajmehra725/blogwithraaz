@@ -42,7 +42,7 @@ export default function Dashboard() {
 
   const getGreeting = () => {
     const hour = new Date().getHours();
-    if (hour < 12) return "Good Morning";
+    if (hour < 12) return "Good Morning raaz";
     else if (hour < 18) return "Good Afternoon";
     else return "Good Evening";
   };
