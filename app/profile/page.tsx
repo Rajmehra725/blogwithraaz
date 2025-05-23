@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaInstagram, FaSun, FaMoon } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Raj from "@/public/Image/Raj.jpeg"
+import { Typewriter } from "react-simple-typewriter";
+import Raj from "@/public/Image/Raj.jpeg";
+
 const skills = [
   { name: "HTML", level: 90 },
   { name: "CSS", level: 85 },
@@ -45,7 +47,17 @@ export default function DeveloperProfile() {
           <Image src={Raj} alt="Raaz Mehra" width={160} height={160} />
         </div>
         <h1 className="text-3xl font-bold text-cyan-500">Raaz Mehra</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">Full Stack Developer | MERN | UI/UX</p>
+        <p className="text-lg text-cyan-400 mt-2 min-h-[40px]">
+          <Typewriter
+            words={["Full Stack Developer", "MERN Specialist", "UI/UX Enthusiast", "Frontend Magician"]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={40}
+            delaySpeed={1500}
+          />
+        </p>
         <p className="text-center mt-4 max-w-xl">
           Building futuristic websites with seamless animations and real-time features. Skilled in the MERN stack and front-end magic.
         </p>
@@ -93,13 +105,13 @@ export default function DeveloperProfile() {
         ))}
       </div>
 
-      {/* Projects Section with Filter */}
+      {/* Projects Section */}
       <div className="mt-12">
         <h2 className="text-2xl font-bold text-cyan-400 mb-4">Projects</h2>
         <div className="flex space-x-4">
-          <button className="text-cyan-500 hover:text-cyan-700" onClick={() => console.log('React')}>React</button>
-          <button className="text-cyan-500 hover:text-cyan-700" onClick={() => console.log('Node.js')}>Node.js</button>
-          <button className="text-cyan-500 hover:text-cyan-700" onClick={() => console.log('MongoDB')}>MongoDB</button>
+          <button className="text-cyan-500 hover:text-cyan-700">React</button>
+          <button className="text-cyan-500 hover:text-cyan-700">Node.js</button>
+          <button className="text-cyan-500 hover:text-cyan-700">MongoDB</button>
         </div>
         <div className="flex space-x-4 overflow-x-auto pb-4 mt-4">
           {["GIAR Website", "RaazUniverse", "Quiz Game", "Car Game"].map((project, index) => (
@@ -118,7 +130,7 @@ export default function DeveloperProfile() {
         </div>
       </div>
 
-      {/* Achievements Section */}
+      {/* Achievements */}
       <div className="mt-12 max-w-xl mx-auto">
         <h2 className="text-2xl font-bold text-cyan-400 mb-4">Achievements</h2>
         <ul className="space-y-4">
@@ -127,16 +139,7 @@ export default function DeveloperProfile() {
             <p className="text-sm text-gray-300">Published in Journal of Maharaja Sayajirao University of Baroda. Ranked 1st.</p>
             <a href="/research-paper.pdf" className="text-cyan-500 hover:text-cyan-700">Download Paper</a>
           </li>
-          {/* Add more achievements here */}
         </ul>
-      </div>
-
-      {/* Testimonial Section */}
-      <div className="mt-12">
-        <h2 className="text-2xl font-bold text-cyan-400 mb-4">Testimonials</h2>
-        <div className="flex space-x-4 overflow-x-auto">
-          {/* Add testimonial cards here */}
-        </div>
       </div>
 
       {/* Contact Form */}

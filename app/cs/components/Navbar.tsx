@@ -31,6 +31,9 @@ export default function Navbar() {
     { href: '/videos', label: 'Videos' },
     { href: '/about', label: 'About' },
      { href: '/resume', label: 'Resume Builder' },
+      { href: '/notifications', label: 'Notifications' },
+        { href: '/News', label: 'Daily News' },
+          { href: '/blog', label: 'Raaz Blogs' },
   ];
 
   return (
