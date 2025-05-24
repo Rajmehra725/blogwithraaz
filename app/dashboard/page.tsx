@@ -8,6 +8,12 @@ import { useRouter } from "next/navigation";
 import { doc, getDoc } from "firebase/firestore";
 import dynamic from "next/dynamic";
 import {
+  reauthenticateWithCredential,
+  EmailAuthProvider,
+  updatePassword,
+} from "firebase/auth";
+
+import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
@@ -17,22 +23,32 @@ import {
   Legend,
 } from "chart.js";
 
-// Register ChartJS components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-// Dynamically import Chart with SSR disabled
 const Chart = dynamic(() => import("react-chartjs-2").then(mod => mod.Chart), {
   ssr: false,
 });
 
 export default function Dashboard() {
-  const [currentUser] = useAuthState(auth);
+  const [currentUser, loading] = useAuthState(auth);
   const [quote, setQuote] = useState("");
   const [userInfo, setUserInfo] = useState<any>(null);
   const [timeGreeting, setTimeGreeting] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [activeTab, setActiveTab] = useState("dashboard");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmNewPassword, setConfirmNewPassword] = useState("");
+
   const router = useRouter();
+
+  useEffect(() => {
+    if (!loading && !currentUser) {
+      router.push("/login");
+    }
+  }, [currentUser, loading]);
 
   const handleSignOut = async () => {
     await signOut(auth);
@@ -47,6 +63,8 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
+    if (!currentUser) return;
+
     setTimeGreeting(getGreeting());
 
     const fetchQuote = async () => {
@@ -60,7 +78,6 @@ export default function Dashboard() {
     };
 
     const fetchUserInfo = async () => {
-      if (!currentUser) return;
       const ref = doc(db, "users", currentUser.uid);
       const snap = await getDoc(ref);
       if (snap.exists()) setUserInfo(snap.data());
@@ -70,7 +87,38 @@ export default function Dashboard() {
     fetchUserInfo();
   }, [currentUser]);
 
-  if (!currentUser) return <p className="p-6">Loading...</p>;
+  const handleChangePassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    setSuccess("");
+
+    if (newPassword !== confirmNewPassword) {
+      setError("New passwords do not match.");
+      return;
+    }
+
+    try {
+      const user = auth.currentUser;
+      if (!user || !user.email) {
+        setError("User not authenticated.");
+        return;
+      }
+
+      const credential = EmailAuthProvider.credential(user.email, currentPassword);
+      await reauthenticateWithCredential(user, credential);
+      await updatePassword(user, newPassword);
+
+      setSuccess("Password updated successfully!");
+      setCurrentPassword("");
+      setNewPassword("");
+      setConfirmNewPassword("");
+    } catch (err: any) {
+      setError(err.message || "Failed to update password.");
+    }
+  };
+
+  if (loading) return <p className="p-6">Checking authentication...</p>;
+  if (!currentUser) return null;
 
   const displayName = userInfo?.name || currentUser?.email || "User";
 
@@ -110,8 +158,41 @@ export default function Dashboard() {
       case "settings":
         return (
           <div>
-            <h2 className="text-lg font-semibold mb-2">⚙️ Settings</h2>
-            <p>Edit your profile, email, and preferences.</p>
+            <h2 className="text-lg font-semibold mb-4">⚙️ Change Password</h2>
+            <form onSubmit={handleChangePassword} className="space-y-4 max-w-md">
+              <input
+                type="password"
+                placeholder="Current Password"
+                className="w-full px-4 py-2 border rounded"
+                value={currentPassword}
+                onChange={(e) => setCurrentPassword(e.target.value)}
+                required
+              />
+              <input
+                type="password"
+                placeholder="New Password"
+                className="w-full px-4 py-2 border rounded"
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+                required
+              />
+              <input
+                type="password"
+                placeholder="Confirm New Password"
+                className="w-full px-4 py-2 border rounded"
+                value={confirmNewPassword}
+                onChange={(e) => setConfirmNewPassword(e.target.value)}
+                required
+              />
+              <button
+                type="submit"
+                className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+              >
+                Update Password
+              </button>
+              {error && <p className="text-red-600">{error}</p>}
+              {success && <p className="text-green-600">{success}</p>}
+            </form>
           </div>
         );
       case "quotes":
@@ -127,11 +208,11 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen flex bg-gray-50">
-      <aside className={`transition-all duration-300 ${sidebarOpen ? 'w-64' : 'w-16'} bg-white shadow-md p-4 space-y-4`}>
+    <div className="min-h-screen flex flex-col md:flex-row bg-gray-50">
+      <aside className={`transition-all duration-300 ${sidebarOpen ? 'w-full md:w-64' : 'w-16'} bg-white shadow-md p-4 space-y-4`}>
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-bold">{sidebarOpen ? "Dashboard" : "📊"}</h2>
-          <button onClick={() => setSidebarOpen(!sidebarOpen)} className="text-sm">☰</button>
+          <button onClick={() => setSidebarOpen(!sidebarOpen)} className="text-sm md:hidden">☰</button>
         </div>
         <nav className="space-y-2">
           <button onClick={() => setActiveTab("dashboard")} className="block w-full text-left text-gray-700 hover:text-green-600">📊 {sidebarOpen && "Analytics"}</button>
@@ -141,8 +222,8 @@ export default function Dashboard() {
           <button onClick={handleSignOut} className="block w-full text-left text-red-600 hover:text-red-800">🚪 {sidebarOpen && "Sign Out"}</button>
         </nav>
       </aside>
-      <main className="flex-1 p-6">
-        <div className="bg-white rounded-xl shadow p-6">
+      <main className="flex-1 p-4 md:p-6">
+        <div className="bg-white rounded-xl shadow p-4 md:p-6">
           {renderTabContent()}
         </div>
       </main>
